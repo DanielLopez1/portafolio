@@ -1,0 +1,84 @@
+:root{
+    /*Colores de la primera plantilla*/
+    --cod-gray: #1a1a1a;
+    --mine-shaft: #2b2b2b;
+    --tundora: #4d4d4d;
+    --concrete: #f2f2f2;
+    --tall-poppy: #bf3a2b;
+
+    /*Colores de la segunda plantilla*/
+    --cello: #1d3658;
+    --wedgewood: #447a9c;
+    --aqua-island: #a7dadc;
+    --peppermint: #f2feaf;
+    --amaranth: #e63746;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* para var cada una de las cajas */
+    /* outline: 1px solid white;  */
+}
+
+body{
+
+    background-color: var(--mine-shaft);
+    color: var(--concrete) ;
+}
+
+html{
+    /* para los links de la barra de nav */
+    scroll-behavior: smooth;
+}
+header{
+    background-color: var(--cod-gray);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+}
+
+.nav-title a{
+    font-size: 36px;
+    color: var(--tall-poppy);
+    text-decoration: none;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 10px
+}
+.nav-list li{
+    text-align: center;
+    justify-content: center;
+    padding: 0px;
+}
+.nav-list li a{
+    text-align: none;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 18px;
+    color: var(--concrete);
+}
+
+.nav-list li a:hover{
+    color: var(--tall-poppy);
+}
+.nav-responsive{
+    background-color: var(--tall-poppy);
+    color: var(--concrete);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
