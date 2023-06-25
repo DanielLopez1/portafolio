@@ -6,6 +6,7 @@
     --concrete: #f2f2f2;
     --tall-poppy: #bf3a2b;
 
+
     /*Colores de la segunda plantilla*/
     --cello: #1d3658;
     --wedgewood: #447a9c;
@@ -18,7 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     /* para var cada una de las cajas */
-    /* outline: 1px solid white;  */
+    outline: 1px solid white; 
 }
 
 body{
@@ -30,6 +31,7 @@ body{
 html{
     /* para los links de la barra de nav */
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 header{
     background-color: var(--cod-gray);
@@ -38,6 +40,7 @@ header{
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
 
 .nav-container{
@@ -47,7 +50,8 @@ header{
 }
 
 .nav-title a{
-    font-size: 36px;
+    font-size: 3.6rem;
+    font-weight: 600;
     color: var(--tall-poppy);
     text-decoration: none;
 }
@@ -56,18 +60,18 @@ header{
     display: flex;
     justify-content: space-around;
     list-style: none;
-    gap: 10px
+    gap: 1rem;
 }
 .nav-list li{
     text-align: center;
     justify-content: center;
-    padding: 0px;
+    /* padding: 0px; */
 }
 .nav-list li a{
     text-align: none;
     text-decoration: none;
     transition: .5s;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: var(--concrete);
 }
 
@@ -77,8 +81,110 @@ header{
 .nav-responsive{
     background-color: var(--tall-poppy);
     color: var(--concrete);
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
     cursor: pointer;
     display: none;
+}
+
+/* HOME */
+
+section{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0  9%
+}
+
+.home-content{
+    max-width: 60rem;
+}
+
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content .text-animated{
+    position: relative;
+    width: 32.8rem;
+}
+
+.home-content .text-animated h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--tall-poppy);
+}
+
+.home-content p{
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 2rem 0 4rem;
+}
+.btn-home{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.btn-home .btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--amaranth);
+    border: .2rem solid var(--tall-poppy);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--concrete);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-home .btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: var(--tundora);
+    transition: .5s;
+}
+
+.btn-home .btn:hover::before{
+    width: 100%;
+}
+
+.socialnetwork-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 4rem;
+    width: 17rem;
+}
+
+.socialnetwork-container a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    color: var(--tall-poppy);
+
 }
