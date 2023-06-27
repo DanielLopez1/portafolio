@@ -97,7 +97,10 @@ section{
 .home{
     display: flex;
     align-items: center;
-    padding: 0  9%
+    padding: 0  9%;
+    background: url(/img/homeOwl.png) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .home-content{
@@ -187,4 +190,129 @@ section{
     font-size: 3rem;
     color: var(--tall-poppy);
 
+}
+
+    /* SECTION ABOUT ME */
+
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+    background: var(--tundora);
+}
+
+span{
+    color: var(--tall-poppy);
+}
+
+.aboutme-title{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.aboutme-img{
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-img img{
+    width: 35rem;
+    height: 35rem;
+    border-radius:50% ;
+    border: .2rem solid var(--tall-poppy);
+}
+
+.aboutme-img .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 40rem;
+    height: 40rem;
+    border-radius:50%;
+    border-top: .2rem solid var(--tundora);
+    border-bottom: .2rem solid var(--tundora);
+    border-left: .2rem solid var(--amaranth);
+    border-right: .2rem solid var(--amaranth);
+}
+
+.aboutme-content{
+    text-align: center;
+}
+
+.aboutme-content h3{
+    font-size: 3rem;
+}
+
+.aboutme-content p{
+    font-size: 2.3rem;
+    margin: 2rem;
+}
+
+ /* SECTION SKILLS */
+
+.skills{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 6rem;
+}
+
+.skills-title{
+    font-size: 5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.skills-subtitle{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skills-frontend{
+    width: 35rem;
+    height: 35rem;
+    background: var(--tundora);
+
+}
+
+.languages-title{
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills-backend{
+    width: 35rem;
+    height: 35rem;
+    background: var(--tundora);
+}
+
+.skills-languages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-languages i{
+    font-size: 3rem;
+    color: var(--tall-poppy);
 }
