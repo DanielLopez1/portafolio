@@ -98,7 +98,8 @@ section{
     display: flex;
     align-items: center;
     padding: 0  9%;
-    background: url(../img/homeowl.png) no-repeat;
+    background-image: url(../img/homeowl.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
