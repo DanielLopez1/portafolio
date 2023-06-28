@@ -17,7 +17,7 @@
                 <li><a href="#aboutme">About me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contactMe">Contact me</a></li>
+                <li><a href="#contactme">Contact me</a></li>
             </ul>
         </nav>
         <div class="nav-responsive">
@@ -39,7 +39,7 @@
                      If you have any proposals or wish to collaborate, feel free to contact me. I hope you enjoy exploring my projects. 
                      Thank you for visiting!
                 </p>
-                <div class="btn-home">
+                <div class="btn-content">
                     <a href="#" class="btn">CV</a>
                     <a href="#" class="btn">Hire me</a>
                 </div>
@@ -49,9 +49,9 @@
                 </div>
             </div>
         </section>
-        <!-- About me -->
+        <!-- about me -->
         <section class="aboutme" id="aboutme">
-            <h2 class="aboutme-title">About <span>Me</span></h2>
+            <h2 class="heading">About <span>Me</span></h2>
             <div class="aboutme-img">
                 <img src="img/perfil.png" alt="">
                 <span class="circle-spin"></span>
@@ -66,30 +66,65 @@
 
             </div>
         </section>
+        <!-- skills -->
         <section class="skills" id="skills">
-            <!-- <div class="skills-title-container"> -->
-                <h3 class="skills-title">My skills</h3>
-                <span class="skills-subtitle">what I know</span>
-            <!-- </div> -->
+                <h2 class="heading">My <span>skills</span></h2>
+                <p class="skills-subtitle">what I know</p>
             <div class="skills-container">
                 <div class="skills-frontend">
                     <h3 class="languages-title">Frontend</h3>
                     <div class="skills-languages">
-                        <i class="fa-brands fa-html5"><p>HTML5</p></i>
-                        <i class="fa-brands fa-css3-alt">CSS3</i>
-                        <i class="fa-brands fa-js">JavaScript</i>
+                        <p><i class="fa-brands fa-html5"></i> HTML5</p>
+                        <p><i class="fa-brands fa-css3-alt"></i> CSS3</p>
+                        <p><i class="fa-brands fa-js"></i> JavaScript</p>
                     </div>
                 </div>
                 <div class="skills-backend">
                     <h3 class="languages-title">Backend</h3>
                     <div class="skills-languages">
-                        <i class="fa-brands fa-java">Java</i>
+                        <p><i class="fa-brands fa-java"></i> Java</p>
+                        
                     </div>
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <!-- projects -->
+        <section class="projects" id="projects">
+
+        </section>
+        <!-- contact me -->
+        <section class="contactme" id="contactme">
+            <h2 class="heading">Contact <span>me!</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="Email Address" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="number" placeholder="Mobile Number" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="Email Subjects" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                <div class="textarea-container">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <span class="focus"></span>
+                </div>
+                <div class="btn-content btns">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </section>
         
     </main>
     <footer></footer>
